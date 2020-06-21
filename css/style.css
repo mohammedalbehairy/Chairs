@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* this makes padding & border don't affect element width  */
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+:root {
+    --baseColor: #7b5244;
+    --subColor: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    padding: 25px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content ul {
+    display: flex;
+}
+
+.header-content ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.header-content ul a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.header-content li a,
+.header-content i {
+    color: var(--baseColor);
+}
+
+.header-content .users {
+    display: flex;
+}
+
+.header-content .users i {
+    padding: 10px 10px;
+}
+
+.header-content .users p {
+    padding: 10px 0 10px 10px;
+}
+
+.header-content .users .num-icon {
+    position: relative;
+}
+
+.header-content .users .num-icon:after {
+    position: absolute;
+    content: '0';
+    width: 10px;
+    height: 10px;
+    background: var(--baseColor);
+    color: white;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.link-item {
+    position: relative;
+}
+
+.link-item:before {
+    position: absolute;
+    content: '';
+    border-top: 2px solid var(--baseColor);
+    border-bottom: 2px solid var(--baseColor);
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------- slider ------------------------ */
+
+section.slider img {
+    width: 100%;
+}
